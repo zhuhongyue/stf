@@ -1,3 +1,8 @@
 {
-  "directory": "res/bower_components"
+  "directory": "res/bower_components",
+  "registry": "https://registry.bower.io",
+  "proxy":"http://child-prc.intel.com:913/",
+  "https-proxy":"http://child-prc.intel.com:913/"
+ }
+
 }

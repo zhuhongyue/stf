@@ -17,7 +17,7 @@
     "ng-file-upload": "~2.0.5",
     "angular-growl-v2": "JanStevens/angular-growl-2#~0.7.9",
     "underscore.string": "~3.2.3",
-    "bootstrap": "~3.3.6",
+    "bootstrap": "~4.3.1",
     "font-lato-2-subset": "~0.4.0",
     "packery": "~1.4.3",
     "draggabilly": "~1.2.4",
@@ -27,13 +27,14 @@
     "angular-ui-bootstrap": "~1.1.1",
     "ng-context-menu": "AdiDahan/ng-context-menu#~1.0.5",
     "components-font-awesome": "~4.5.0",
-    "epoch": "~0.8.4",
+    "epoch": "^0.8.4",
     "ng-epoch": "~1.0.7",
     "eventEmitter": "~4.3.0",
-    "angular-ladda": "~0.3.1",
+    "angular-ladda": "~0.4.3",
     "d3": "~3.5.14",
     "spin.js": "~2.3.2",
-    "angular-xeditable": "~0.1.9"
+    "angular-xeditable": "~0.1.9",
+    "angular-growl": "^0.4.0"
   },
   "private": true,
   "devDependencies": {

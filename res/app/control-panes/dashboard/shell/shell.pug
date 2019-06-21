@@ -14,7 +14,7 @@
           autocapitalize='off', spellcheck='false',
           tabindex='30', accesskey='S', autocomplete='on').form-control.shell-input
         span.input-group-btn
-          button.btn.btn-primary-outline(ng-click='run(command)', ng-disabled='!command')
+          button.btn.btn-primary-outline(ng-disabled='!command')
             i.fa.fa-play
     pre.shell-results.selectable(ng-show='data') {{data}}
     pre.shell-results.selectable.shell-results-empty(ng-show='result.settled && !data') No output

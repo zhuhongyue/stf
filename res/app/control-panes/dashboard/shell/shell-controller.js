@@ -8,7 +8,7 @@ module.exports = function ShellCtrl($scope) {
     }
 
     $scope.command = ''
-
+    alert("send test run message to server")
     return $scope.control.shell(command)
       .progressed(function(result) {
         $scope.result = result
