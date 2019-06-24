@@ -1,20 +1,16 @@
 .widget-container.fluid-height.stf-shell(ng-controller='ShellCtrl')
   .heading
     stacked-icon(icon='fa-terminal', color='color-darkgray')
-    span(translate) Shell
-    clear-button(ng-click='clear()', ng-disabled='!command && !data').btn-xs
+    span(translate='translate') Automation Execution
+    clear-button.btn-xs(ng-click='clear()', ng-disabled='!command && !data')
     help-icon(topic='Remote-Shell', uib-tooltip='{{"Executes remote shell commands" | translate}}')
-
   .widget-content.padded
-
     // NOTE: autofill doesn't work here
-    form(method='post', enable-autofill, ng-submit='run(command)')
+    form(method='post', enable-autofill='enable-autofill', ng-submit='run(command)')
       .input-group.form-inline
-        input(type=text, ng-model='command', Xtext-focus-select,
-          autocapitalize='off', spellcheck='false',
-          tabindex='30', accesskey='S', autocomplete='on').form-control.shell-input
-        span.input-group-btn
-          button.btn.btn-primary-outline(ng-disabled='!command')
-            i.fa.fa-play
-    pre.shell-results.selectable(ng-show='data') {{data}}
-    pre.shell-results.selectable.shell-results-empty(ng-show='result.settled && !data') No output
+        button.btn.btn-primary-outline
+          i(ng-class="{false:'fa fa-play',true:'fa fa-stop'}[isrunning]")
+    pre.shell-results.selectable(ng-show='data').
+      \n\n{{data}}            
+    pre.shell-results.selectable.shell-results-empty(ng-show='result.settled && !data').
+      \n\nNo output            
